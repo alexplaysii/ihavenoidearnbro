@@ -14,6 +14,7 @@ local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
 local TextButton_9 = Instance.new("TextButton")
 local TextButton_99 = Instance.new("TextButton")
+local TextButton_secret = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local Frame2 = Instance.new("Frame")
 local TextButton_10 = Instance.new("TextButton")
@@ -217,6 +218,20 @@ TextButton_99.TextScaled = true
 TextButton_99.TextSize = 16
 TextButton_99.TextWrapped = true
 TextButton_99.AutoButtonColor = false
+
+TextButton_secret.Parent = Frame_2
+TextButton_secret.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextButton_secret.BackgroundTransparency = 0
+TextButton_secret.BorderSizePixel = 0
+TextButton_secret.Position = UDim2.new(0, 0, 1.095, 0)
+TextButton_secret.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_secret.Font = Enum.Font.SourceSansLight
+TextButton_secret.Text = "Unlock Secret Ending"
+TextButton_secret.TextColor3 = Color3.new(1, 1, 1)
+TextButton_secret.TextScaled = true
+TextButton_secret.TextSize = 16
+TextButton_secret.TextWrapped = true
+TextButton_secret.AutoButtonColor = false
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.new(1, 0, 0)
@@ -708,6 +723,16 @@ local function JIOAWE_fake_script() -- TextButton_99.LocalScript
 	end)
 end
 coroutine.wrap(JIOAWE_fake_script)()
+
+local function JOHNDAUB_fake_script() -- TextButton_Secret.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_secret)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvents.GetKeys:FireServer()
+		script.Parent.Text = "Secret Ending Unlocked 🔓"
+	end)
+end
+coroutine.wrap(JOHNDAUB_fake_script)()
 
 local function JAHBO_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
