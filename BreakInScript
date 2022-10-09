@@ -55,7 +55,7 @@ local TextLabel_10 = Instance.new("TextLabel")
 	Properties:
 --]]
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -205,7 +205,7 @@ TextButton_9.TextSize = 16
 TextButton_9.TextWrapped = true
 
 TextButton_99.Parent = Frame_2
-TextButton_99.BackgroundColor3 = Color3.new(42, 42, 42)
+TextButton_99.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
 TextButton_99.BackgroundTransparency = 0
 TextButton_99.BorderSizePixel = 0
 TextButton_99.Position = UDim2.new(0, 0, 0.984, 0)
