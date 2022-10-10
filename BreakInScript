@@ -248,7 +248,7 @@ TextButton_IHaveNOiDea.TextScaled = true
 TextButton_IHaveNOiDea.TextSize = 16
 TextButton_IHaveNOiDea.TextWrapped = true
 TextButton_IHaveNOiDea.AutoButtonColor = false
-TextButton_IHaveNOiDea.Visible = false
+TextButton_IHaveNOiDea.Visible = true
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.new(1, 0, 0)
