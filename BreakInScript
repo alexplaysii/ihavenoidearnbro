@@ -14,6 +14,7 @@ local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
 local TextButton_9 = Instance.new("TextButton")
 local TextButton_99 = Instance.new("TextButton")
+local TextButton_IHaveNOiDea = Instance.new("TextButton")
 local TextButton_secret = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local Frame2 = Instance.new("Frame")
@@ -232,6 +233,22 @@ TextButton_secret.TextScaled = true
 TextButton_secret.TextSize = 16
 TextButton_secret.TextWrapped = true
 TextButton_secret.AutoButtonColor = false
+
+
+TextButton_IHaveNOiDea.Parent = Frame_2
+TextButton_IHaveNOiDea.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextButton_IHaveNOiDea.BackgroundTransparency = 0
+TextButton_IHaveNOiDea.BorderSizePixel = 0
+TextButton_IHaveNOiDea.Position = UDim2.new(0, 0,1.207, 0)
+TextButton_IHaveNOiDea.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_IHaveNOiDea.Font = Enum.Font.SourceSansLight
+TextButton_IHaveNOiDea.Text = "Activate Basement Lights (only during monitor time)"
+TextButton_IHaveNOiDea.TextColor3 = Color3.new(1, 1, 1)
+TextButton_IHaveNOiDea.TextScaled = true
+TextButton_IHaveNOiDea.TextSize = 16
+TextButton_IHaveNOiDea.TextWrapped = true
+TextButton_IHaveNOiDea.AutoButtonColor = false
+TextButton_IHaveNOiDea.Visible = false
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.new(1, 0, 0)
@@ -733,6 +750,22 @@ local function JOHNDAUB_fake_script() -- TextButton_Secret.LocalScript
 	end)
 end
 coroutine.wrap(JOHNDAUB_fake_script)()
+
+local function faethful_dev_fake_script() -- TextButton_Secret.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_IHaveNOiDea)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = 2,
+			[2] = "Completed"
+		}
+
+		game:GetService("ReplicatedStorage").RemoteEvents.PCCamera:FireServer(unpack(args))
+		game:GetService("ReplicatedStorage").RemoteEvents.BasementMission:FireServer()
+		script.Parent.Text = "Basement Lights ON"
+	end)
+end
+coroutine.wrap(faethful_dev_fake_script)()
 
 local function JAHBO_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
