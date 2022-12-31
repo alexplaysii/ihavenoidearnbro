@@ -16,6 +16,8 @@ local TextButton_9 = Instance.new("TextButton")
 local TextButton_99 = Instance.new("TextButton")
 local TextButton_IHaveNOiDea = Instance.new("TextButton")
 local TextButton_secret = Instance.new("TextButton")
+local DrownOMatic2000 = Instance.new("TextButton")
+local BasementDoor = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local Frame2 = Instance.new("Frame")
 local TextButton_10 = Instance.new("TextButton")
@@ -249,6 +251,37 @@ TextButton_IHaveNOiDea.TextSize = 16
 TextButton_IHaveNOiDea.TextWrapped = true
 TextButton_IHaveNOiDea.AutoButtonColor = false
 TextButton_IHaveNOiDea.Visible = true
+
+DrownOMatic2000.Parent = Frame_2
+DrownOMatic2000.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+DrownOMatic2000.BackgroundTransparency = 0
+DrownOMatic2000.BorderSizePixel = 0
+DrownOMatic2000.Position = UDim2.new(0, 0,1.331, 0)
+DrownOMatic2000.Size = UDim2.new(1, 0, 0.124845669, 0)
+DrownOMatic2000.Font = Enum.Font.SourceSansLight
+DrownOMatic2000.Text = "Open Drown-O-Matic"
+DrownOMatic2000.TextColor3 = Color3.new(1, 1, 1)
+DrownOMatic2000.TextScaled = true
+DrownOMatic2000.TextSize = 16
+DrownOMatic2000.TextWrapped = true
+DrownOMatic2000.AutoButtonColor = false
+DrownOMatic2000.Visible = true
+
+BasementDoor.Parent = Frame_2
+BasementDoor.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BasementDoor.BackgroundTransparency = 0
+BasementDoor.BorderSizePixel = 0
+BasementDoor.Position = UDim2.new(0, 0,1.456, 0)
+BasementDoor.Size = UDim2.new(1, 0, 0.124845669, 0)
+BasementDoor.Font = Enum.Font.SourceSansLight
+BasementDoor.Text = "Unlock Basement Door"
+BasementDoor.TextColor3 = Color3.new(1, 1, 1)
+BasementDoor.TextScaled = true
+BasementDoor.TextSize = 16
+BasementDoor.TextWrapped = true
+BasementDoor.AutoButtonColor = false
+BasementDoor.Visible = true
+
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.new(1, 0, 0)
@@ -767,6 +800,38 @@ local function faethful_dev_fake_script() -- TextButton_Secret.LocalScript
 end
 coroutine.wrap(faethful_dev_fake_script)()
 
+local function DrownOMatic2000er() -- TextButton_Secret.LocalScript 
+	local script = Instance.new('LocalScript', DrownOMatic2000)
+	
+	local opened = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if opened == false then
+			opened =true
+			script.Parent.Parent.Parent.Parent.drownomatic.Visible = true
+		elseif opened == true then
+			opened = false
+			script.Parent.Parent.Parent.Parent.drownomatic.Visible = false
+		end
+		
+	end)
+end
+coroutine.wrap(DrownOMatic2000er)()
+
+local function BasementUnlocker() -- TextButton_Secret.LocalScript 
+	local script = Instance.new('LocalScript', BasementDoor)
+	local thing = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if thing == false then
+			thing = true
+			game:GetService("ReplicatedStorage").RemoteEvents.UnlockDoor:FireServer()
+			script.Parent.Text = "Basement Door Unlocked 🔓"
+		end
+	end)
+end
+coroutine.wrap(BasementUnlocker)()
+
 local function JAHBO_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
@@ -983,3 +1048,289 @@ local function FKRBDAC_fake_script() -- TextButton_30.LocalScript
 	end)
 end
 coroutine.wrap(FKRBDAC_fake_script)()
+
+---------------------- drown o matic ---------------------------
+
+local drownomatic_h7c8q256h93q735q93458q34324 = Instance.new("Frame")
+local dw97ue07482j74q34524 = Instance.new("UICorner")
+local TextLabel7890e78129j748964dq29349qh2934q234 = Instance.new("TextLabel")
+local TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID = Instance.new("TextLabel")
+local TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473 = Instance.new("TextBox")
+local UICorner_2_836h498q67q2356q289456q3278945 = Instance.new("UICorner")
+local ImageLabel_4896yc49h26aq342364h256347823674vt4t3tv4t = Instance.new("ImageLabel")
+local drownall_8i31624789627456q27456q278954q2367y45hq234 = Instance.new("TextButton")
+local UICorner_3_48hn2h478q845q23458q253467q235842534q26534234 = Instance.new("UICorner")
+local drown_893738958946587w3465h78vw3956937465 = Instance.new("TextButton")
+local UICorner_4_9e949u124687658598a568923wa56g6w3a9456v89gw3645y3478564 = Instance.new("UICorner")
+local err_er89234723564chaq23854c672a34c58723674cq2q38g23 = Instance.new("TextLabel")
+local usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v = Instance.new("Frame")
+local cancontinueornot_48917492q7j494vq723434vqw389v476v = Instance.new("BoolValue")
+----------------------------
+local UICorner_5_oi74982374q2694cq26384cq6782h346c8q2364c = Instance.new("UICorner")
+local TextLabel_3_oipaq867476qai8w72364v863859673w434535 = Instance.new("TextLabel")
+local no_uq34y598hq34785q93457q345698cq37645q36c424 = Instance.new("TextButton")
+local UICorner_6_y3t4c7q23645yfaht5cq347c59632458c763535324 = Instance.new("UICorner")
+local yes_qwe769875h6q98354c3946h57834h5v523654956v35 = Instance.new("TextButton")
+local UICorner_7_78cq236745q23745cq26g3842534q2534c2354cq28564c34cq2c34 = Instance.new("UICorner")
+local TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234 = Instance.new("TextLabel")
+
+--Properties:
+
+cancontinueornot_48917492q7j494vq723434vqw389v476v.Value = false
+cancontinueornot_48917492q7j494vq723434vqw389v476v.Name = "cancontinue"
+
+drownomatic_h7c8q256h93q735q93458q34324.Name = "drownomatic"
+drownomatic_h7c8q256h93q735q93458q34324.Visible = false
+drownomatic_h7c8q256h93q735q93458q34324.Draggable = true
+drownomatic_h7c8q256h93q735q93458q34324.Parent = ScreenGui
+drownomatic_h7c8q256h93q735q93458q34324.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+drownomatic_h7c8q256h93q735q93458q34324.BorderColor3 = Color3.fromRGB(42, 42, 42)
+drownomatic_h7c8q256h93q735q93458q34324.BorderSizePixel = 0
+drownomatic_h7c8q256h93q735q93458q34324.Position = UDim2.new(0.396732897, 0, 0.0660000294, 0)
+drownomatic_h7c8q256h93q735q93458q34324.Size = UDim2.new(0.321602821, 0, 0.316590428, 0)
+
+dw97ue07482j74q34524.Parent = drownomatic_h7c8q256h93q735q93458q34324
+
+TextLabel7890e78129j748964dq29349qh2934q234.Parent = drownomatic_h7c8q256h93q735q93458q34324
+TextLabel7890e78129j748964dq29349qh2934q234.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7890e78129j748964dq29349qh2934q234.BackgroundTransparency = 1.000
+TextLabel7890e78129j748964dq29349qh2934q234.Position = UDim2.new(0, 0, 0.0830564871, 0)
+TextLabel7890e78129j748964dq29349qh2934q234.Size = UDim2.new(1, 0, 0, 28)
+TextLabel7890e78129j748964dq29349qh2934q234.Font = Enum.Font.FredokaOne
+TextLabel7890e78129j748964dq29349qh2934q234.Text = "Drown-O-Matic 2000"
+TextLabel7890e78129j748964dq29349qh2934q234.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7890e78129j748964dq29349qh2934q234.TextScaled = true
+TextLabel7890e78129j748964dq29349qh2934q234.TextSize = 14.000
+TextLabel7890e78129j748964dq29349qh2934q234.TextWrapped = true
+
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.Parent = drownomatic_h7c8q256h93q735q93458q34324
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.BackgroundTransparency = 1.000
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.Position = UDim2.new(0, 0, 0.285506666, 0)
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.Size = UDim2.new(1, 0, 0.0260510743, 28)
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.Font = Enum.Font.FredokaOne
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.Text = "For those who you despise... and want to get revenge!"
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.TextScaled = true
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.TextSize = 14.000
+TextLabel_2_428947198h1246n9h6t47aciy3t357q8587q3645UniqueID.TextWrapped = true
+
+
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.Parent = drownomatic_h7c8q256h93q735q93458q34324
+cancontinueornot_48917492q7j494vq723434vqw389v476v.Parent = TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.BackgroundTransparency = 0.200
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.BorderSizePixel = 0
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.Position = UDim2.new(0, 0, 0.454152346, 0)
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.Size = UDim2.new(0, 375, 0, 35)
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.Font = Enum.Font.FredokaOne
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.PlaceholderText = "Enter username to DROWN"
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.Text = ""
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.TextSize = 15.000
+TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473.TextWrapped = true
+
+
+
+UICorner_2_836h498q67q2356q289456q3278945.Parent = TextBox_4891274986f83h46q2u3h4rq234vthq62745273wq546q253473
+
+ImageLabel_4896yc49h26aq342364h256347823674vt4t3tv4t.Parent = drownomatic_h7c8q256h93q735q93458q34324
+ImageLabel_4896yc49h26aq342364h256347823674vt4t3tv4t.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4896yc49h26aq342364h256347823674vt4t3tv4t.Position = UDim2.new(0.0266217887, 0, 0.0357198715, 0)
+ImageLabel_4896yc49h26aq342364h256347823674vt4t3tv4t.Size = UDim2.new(0, 45, 0, 45)
+ImageLabel_4896yc49h26aq342364h256347823674vt4t3tv4t.Image = "rbxthumb://type=Asset&id=6788516209&w=150&h=150"
+
+drownall_8i31624789627456q27456q278954q2367y45hq234.Name = "drownall"
+drownall_8i31624789627456q27456q278954q2367y45hq234.Parent = drownomatic_h7c8q256h93q735q93458q34324
+drownall_8i31624789627456q27456q278954q2367y45hq234.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+drownall_8i31624789627456q27456q278954q2367y45hq234.Position = UDim2.new(0.0612301268, 0, 0.768218279, 0)
+drownall_8i31624789627456q27456q278954q2367y45hq234.Size = UDim2.new(0, 161, 0, 38)
+drownall_8i31624789627456q27456q278954q2367y45hq234.Font = Enum.Font.FredokaOne
+drownall_8i31624789627456q27456q278954q2367y45hq234.Text = "😈DROWN ALL"
+drownall_8i31624789627456q27456q278954q2367y45hq234.TextColor3 = Color3.fromRGB(0, 0, 0)
+drownall_8i31624789627456q27456q278954q2367y45hq234.TextScaled = true
+drownall_8i31624789627456q27456q278954q2367y45hq234.TextSize = 14.000
+drownall_8i31624789627456q27456q278954q2367y45hq234.TextWrapped = true
+
+UICorner_3_48hn2h478q845q23458q253467q235842534q26534234.Parent = drownall_8i31624789627456q27456q278954q2367y45hq234
+
+drown_893738958946587w3465h78vw3956937465.Name = "drown"
+drown_893738958946587w3465h78vw3956937465.Parent = drownomatic_h7c8q256h93q735q93458q34324
+drown_893738958946587w3465h78vw3956937465.BackgroundColor3 = Color3.fromRGB(81, 255, 0)
+drown_893738958946587w3465h78vw3956937465.Position = UDim2.new(0.505814075, 0, 0.777320921, 0)
+drown_893738958946587w3465h78vw3956937465.Size = UDim2.new(0, 161, 0, 36)
+drown_893738958946587w3465h78vw3956937465.Font = Enum.Font.FredokaOne
+drown_893738958946587w3465h78vw3956937465.Text = "🤽 Drown Selected Player"
+drown_893738958946587w3465h78vw3956937465.TextColor3 = Color3.fromRGB(0, 0, 0)
+drown_893738958946587w3465h78vw3956937465.TextScaled = true
+drown_893738958946587w3465h78vw3956937465.TextSize = 14.000
+drown_893738958946587w3465h78vw3956937465.TextWrapped = true
+
+UICorner_4_9e949u124687658598a568923wa56g6w3a9456v89gw3645y3478564.Parent = drown_893738958946587w3465h78vw3956937465
+
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Name = "err"
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Parent = drownomatic_h7c8q256h93q735q93458q34324
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.BackgroundTransparency = 1.000
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Position = UDim2.new(0, 0, 0.63760221, 0)
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Size = UDim2.new(1, 0, -0.0258444436, 28)
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Visible = false
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Font = Enum.Font.FredokaOne
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.Text = "ERROR: This user was not found in the game! Please make sure their username is spelled correctly."
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.TextColor3 = Color3.fromRGB(255, 0, 0)
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.TextScaled = true
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.TextSize = 14.000
+err_er89234723564chaq23854c672a34c58723674cq2q38g23.TextWrapped = true
+
+usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v.Name = "usure"
+usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v.Parent = drownomatic_h7c8q256h93q735q93458q34324
+usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v.Size = UDim2.new(1, 0, 1, 0)
+usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v.Visible = false
+usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v.ZIndex = 2
+
+UICorner_5_oi74982374q2694cq26384cq6782h346c8q2364c.Parent = usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v
+
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.Parent = usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.BackgroundTransparency = 1.000
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.Size = UDim2.new(0, 375, 0, 135)
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.ZIndex = 2
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.Font = Enum.Font.FredokaOne
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.Text = "Are you sure you want to do this? Doing so will result in the game being unplayable."
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.TextColor3 = Color3.fromRGB(0, 187, 255)
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.TextScaled = true
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.TextSize = 14.000
+TextLabel_3_oipaq867476qai8w72364v863859673w434535.TextWrapped = true
+
+no_uq34y598hq34785q93457q345698cq37645q36c424.Name = "no"
+no_uq34y598hq34785q93457q345698cq37645q36c424.Parent = usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v
+no_uq34y598hq34785q93457q345698cq37645q36c424.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+no_uq34y598hq34785q93457q345698cq37645q36c424.Position = UDim2.new(0.0133108972, 0, 0.768218279, 0)
+no_uq34y598hq34785q93457q345698cq37645q36c424.Size = UDim2.new(0, 174, 0, 38)
+no_uq34y598hq34785q93457q345698cq37645q36c424.ZIndex = 2
+no_uq34y598hq34785q93457q345698cq37645q36c424.Font = Enum.Font.FredokaOne
+no_uq34y598hq34785q93457q345698cq37645q36c424.Text = "No, I want people to stay"
+no_uq34y598hq34785q93457q345698cq37645q36c424.TextColor3 = Color3.fromRGB(0, 0, 0)
+no_uq34y598hq34785q93457q345698cq37645q36c424.TextScaled = true
+no_uq34y598hq34785q93457q345698cq37645q36c424.TextSize = 14.000
+no_uq34y598hq34785q93457q345698cq37645q36c424.TextWrapped = true
+
+UICorner_6_y3t4c7q23645yfaht5cq347c59632458c763535324.Parent = no_uq34y598hq34785q93457q345698cq37645q36c424
+
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.Name = "yes"
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.Parent = usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.BackgroundColor3 = Color3.fromRGB(0, 255, 17)
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.Position = UDim2.new(0.492503166, 0, 0.768218279, 0)
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.Size = UDim2.new(0, 185, 0, 38)
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.ZIndex = 2
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.Font = Enum.Font.FredokaOne
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.Text = "Yes, bring it on!"
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.TextColor3 = Color3.fromRGB(0, 0, 0)
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.TextScaled = true
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.TextSize = 14.000
+yes_qwe769875h6q98354c3946h57834h5v523654956v35.TextWrapped = true
+
+UICorner_7_78cq236745q23745cq26g3842534q2534c2354cq28564c34cq2c34.Parent = yes_qwe769875h6q98354c3946h57834h5v523654956v35
+
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.Parent = usure_4936737232963hv47396v283w4vh234756q9872356q8934v3459v
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.Position = UDim2.new(0, 0, 0.693490565, 0)
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.Size = UDim2.new(0, 375, 0, 4)
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.ZIndex = 2
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.Font = Enum.Font.FredokaOne
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.Text = ""
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.TextColor3 = Color3.fromRGB(0, 187, 255)
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.TextScaled = true
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.TextSize = 14.000
+TextLabel_4_77823c54h8q25cq25c3984c62q534c952q3c5q2934c5q234.TextWrapped = true
+
+-- Scripts:
+
+local function LANKYBOX_fake_script() -- drownomatic.LocalScript 
+	local script = Instance.new('LocalScript', drownomatic_h7c8q256h93q735q93458q34324)
+
+	script.Parent.TextBox.Focused:Connect(function()
+		script.Parent.TextBox.cancontinue.Value = false
+		script.Parent.err.Visible = false
+	end)
+
+	script.Parent.TextBox.FocusLost:Connect(function()
+		if game.Players:FindFirstChild(script.Parent.TextBox.Text) then
+			script.Parent.TextBox.cancontinue.Value = true
+		else
+			script.Parent.err.Visible = true
+			script.Parent.TextBox.cancontinue.Value = false
+		end
+	end)
+
+	script.Parent.drown.MouseButton1Click:Connect(function()
+		if script.Parent.TextBox.cancontinue.Value == true then
+			if game.Players:FindFirstChild(script.Parent.TextBox.Text) then
+				game:GetService("ReplicatedStorage").RemoteEvents.ToxicDrown:FireServer(1,game.Players[script.Parent.TextBox.Text])
+			end
+		end
+	end)
+
+	script.Parent.drownall.MouseButton1Click:Connect(function()
+		script.Parent.usure.Visible = true
+	end)
+
+	script.Parent.usure.yes.MouseButton1Click:Connect(function()
+		for i,v in ipairs(game.Players:GetPlayers()) do
+			game:GetService("ReplicatedStorage").RemoteEvents.ToxicDrown:FireServer(1,v)
+		end
+	end)
+
+	script.Parent.usure.no.MouseButton1Click:Connect(function()
+		script.Parent.usure.Visible = false
+	end)
+end
+coroutine.wrap(LANKYBOX_fake_script)()
+
+local function DRAGIFY_SCRIPT_FAKE() -- drownomatic.Dragify 
+	local script = Instance.new('LocalScript', drownomatic_h7c8q256h93q735q93458q34324)
+	script.Name = "Dragify"
+	
+	local UIS = game:GetService("UserInputService")
+	
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+
+	dragify(script.Parent)
+end
+
+coroutine.wrap(DRAGIFY_SCRIPT_FAKE)()
